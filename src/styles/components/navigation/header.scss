@@ -37,3 +37,19 @@
     width: 34px;
   }
 }
+
+.cart_wrapper{
+  display: block;
+  position: relative;
+  top: 1.714em;
+  float: right;
+  border-left: 1px solid #878787;
+  padding: 0.143em 0em;
+}
+
+.fa-shopping-bag{
+  color: #0ff;
+  padding: 0em 1.071em;
+  margin-right: 0.714em;
+  font-size: 1.1em;
+}
