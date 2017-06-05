@@ -1,0 +1,34 @@
+/* Fonts */
+@font-face {
+  font-family: 'FuturaBT-MediumCondensed';
+  src: url('~../fonts/FuturaBT-MediumCondensed.woff2') format('woff2'),
+       url('~../fonts/FuturaBT-MediumCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaCondRegular';
+  src: url('~../fonts/FuturaCondMedium.woff2') format('woff2'),
+       url('~../fonts/FuturaCondMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura-Book';
+  src: url('~../fonts/Futura-Book.woff2') format('woff2'),
+       url('~../fonts/Futura-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Component Styles */
+@import './global/globalStyles';
+
+/* Component Styles */
+@import './components/app';
+@import './components/navigation/header';
+@import './components/navigation/burger.scss';

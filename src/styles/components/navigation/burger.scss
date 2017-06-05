@@ -1,0 +1,41 @@
+// main: ../../main.scss
+
+.burger{
+  position: relative;
+  top: 1.714em;
+  left: 1.429em;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+
+  & div{
+    height: 0.143em;
+    width: 1.429em;
+    margin-bottom: 0.357em;
+    background: #878787;
+    transition: width .2s;
+  }
+
+  & div:first-child{
+    width: 1.286em
+  }
+
+  & div:last-child{
+    width: 1.143em;
+  }
+
+}
+
+.burger:hover {
+  & div{
+    width: 1.286em;
+  }
+
+  & div:first-child{
+     width: 1.429em;
+   }
+
+  & div:last-child{
+    width: 1.429em;
+  }
+}
