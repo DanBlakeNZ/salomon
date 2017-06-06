@@ -1,9 +1,8 @@
 import {combineReducers} from 'redux'
-
-import test from './testReducer'
+import mobileMenuOpen from './mobileMenuReducer.js'
 
 const rootReducer = combineReducers({
-  test
+  mobileMenuOpen
 })
 
 export default rootReducer
