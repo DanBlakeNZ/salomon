@@ -3,16 +3,15 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as mobileMenuActions from '../actions/mobileMenuActions'
 
-import Header from './navigation/Header.js'
+import Header from './navigation/Header'
+import MobileMenu from './navigation/MobileMenu'
 
 class App extends React.Component {
-  componentDidMount () {
-
-  }
   render () {
     return (
       <div>
         <Header props={this.props} />
+        <MobileMenu />
         {this.props.children}
       </div>
     )
@@ -20,7 +19,8 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  children: PropTypes.object.isRequired
+  children: PropTypes.object.isRequired,
+  mobileMenuOpen: PropTypes.bool
 }
 
 function mapStateToProps (state, ownProps) {

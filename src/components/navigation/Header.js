@@ -38,7 +38,11 @@ export default Header
 function openMenu (actions, mobileMenuOpen) {
   if (mobileMenuOpen) {
     actions.toggleMenuSuccess(false)
+    document.getElementById('mobileMenuWrapper').classList.remove('mobileMenuShow')
+    document.getElementById('mobileMenuWrapper').classList.add('mobileMenuHide')
   } else {
     actions.toggleMenuSuccess(true)
+    document.getElementById('mobileMenuWrapper').classList.remove('mobileMenuHide')
+    document.getElementById('mobileMenuWrapper').classList.add('mobileMenuShow')
   }
 }
