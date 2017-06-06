@@ -17,6 +17,16 @@
     border-top: 3px solid #1c1c1c;
     background: url('https://res.cloudinary.com/dblakenzcloud/image/upload/v1496636673/Salomon/broken_noise-pattern.png');
   }
+
+  & ul{
+    width: 100%;
+    margin: 0em;
+    padding: 0em;
+  }
+
+  & li:first-child{
+    border-top: none;
+  }
 }
 
 .mobileMenuHide{
