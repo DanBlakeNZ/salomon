@@ -11,7 +11,7 @@ class App extends React.Component {
     return (
       <div>
         <Header props={this.props} />
-        <MobileMenu />
+        <MobileMenu props={this.props} />
         {this.props.children}
       </div>
     )
@@ -20,7 +20,7 @@ class App extends React.Component {
 
 App.propTypes = {
   children: PropTypes.object.isRequired,
-  mobileMenuOpen: PropTypes.bool
+  mobileMenuOpen: PropTypes.bool.isRequired
 }
 
 function mapStateToProps (state, ownProps) {
@@ -31,7 +31,7 @@ function mapStateToProps (state, ownProps) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    actions: bindActionCreators(mobileMenuActions, dispatch)
+    mobileMenuActions: bindActionCreators(mobileMenuActions, dispatch)
   }
 }
 

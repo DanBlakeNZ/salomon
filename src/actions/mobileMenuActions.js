@@ -4,3 +4,10 @@ export function toggleMenuSuccess (mobileMenuOpen) {
     mobileMenuOpen
   }
 }
+
+export function loadSecoundryMobileMenuLayer (catagory) {
+  return {
+    type: 'SECOUNDRY_MOBILE_MENU_LOAD_SUCCESS',
+    catagory
+  }
+}
