@@ -1,0 +1,54 @@
+// main: ../../main.scss
+
+.mobileMenuListItem{
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  border-top: 1px solid #434343;
+
+  & a{
+    display: block;
+    position: relative;
+    padding: 15px 10px;
+    font-family: 'FuturaBT-MediumCondensed';
+    font-size: 1.14em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #dfeae8;
+  }
+
+  & a:hover{
+    background-color: #434343;
+  }
+}
+
+.fa-angle-right{
+  color: #dfeae8;
+  margin-right: 0.27em;
+  font-size: 2em;
+  position: absolute;
+  right: 0.714em;
+  top: 0.3em;
+  font-weight: 400;
+}
+
+.fa-angle-left{
+  color: #dfeae8;
+  margin-right: 0.27em;
+  font-size: 2em;
+  position: absolute;
+  right: 0.714em;
+  top: 0.3em;
+  font-weight: 400;
+}
+
+#sLab{
+  color: #31babc!important;
+}
+
+#sLabArrow{
+  color: #31babc!important;
+  z-index: 1000;
+}

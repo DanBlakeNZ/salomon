@@ -1,13 +1,26 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
+import MobileMenuItem from './MobileMenuItem.js'
+import firstMenuData from '../../data/menuData/firstMenu'
 
-const MobileMenu = () => {
+const MobileMenu = ({props}) => {
   return (
-    <div id='mobileMenuWrapper' className='mobileMenuHide'>
+    <div id='mobileMenuWrapper' className='mobileMenuHide MobileMenuWrapper'>
       <div className='mobileNav'>
-
+        <ul>
+          {firstMenuData.map((menuItem) => {
+            return (
+              <MobileMenuItem menuItem={menuItem} key={menuItem} actions={props.mobileMenuActions} />
+            )
+          })}
+        </ul>
       </div>
     </div>
   )
+}
+
+MobileMenu.propTypes = {
+  props: PropTypes.object.isRequired,
+  mobileMenuActions: PropTypes.object
 }
 
 export default MobileMenu

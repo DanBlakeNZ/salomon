@@ -1,14 +1,14 @@
 import React, {PropTypes} from 'react'
 
 const Header = ({props}) => {
-  const actions = props.actions
+  const mobileMenuActions = props.mobileMenuActions
   const mobileMenuOpen = props.mobileMenuOpen
 
   return (
     <header className='header' id='salomonHeaderWrapper'>
       <nav>
         <div className='navWrapper'>
-          <div id='burger' className='burgerClosed' onClick={() => openMenu(actions, mobileMenuOpen)}>
+          <div id='burger' className='burgerClosed' onClick={() => openMenu(mobileMenuActions, mobileMenuOpen)}>
             <div />
             <div />
             <div />
@@ -29,21 +29,23 @@ const Header = ({props}) => {
 
 Header.propTypes = {
   props: PropTypes.object.isRequired,
-  actions: PropTypes.object,
+  mobileMenuActions: PropTypes.object,
   mobileMenuOpen: PropTypes.bool
 }
 
 export default Header
 
-function openMenu (actions, mobileMenuOpen) {
+function openMenu (mobileMenuActions, mobileMenuOpen) {
   if (mobileMenuOpen) {
-    actions.toggleMenuSuccess(false)
+    mobileMenuActions.toggleMenuSuccess(false)
     document.getElementById('burger').classList.remove('burgerOpen')
     document.getElementById('burger').classList.add('burgerClosed')
     document.getElementById('mobileMenuWrapper').classList.remove('mobileMenuShow')
     document.getElementById('mobileMenuWrapper').classList.add('mobileMenuHide')
+    document.getElementById('mobileMenuSecoundLayerWrapper').classList.add('mobileMenuHide')
+    document.getElementById('mobileMenuSecoundLayerWrapper').classList.remove('mobileMenuShow')
   } else {
-    actions.toggleMenuSuccess(true)
+    mobileMenuActions.toggleMenuSuccess(true)
     document.getElementById('burger').classList.remove('burgerClosed')
     document.getElementById('burger').classList.add('burgerOpen')
     document.getElementById('mobileMenuWrapper').classList.remove('mobileMenuHide')

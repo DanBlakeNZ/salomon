@@ -1,5 +1,5 @@
 // main: ../../main.scss
-#mobileMenuWrapper{
+#mobileMenuSecoundLayerWrapper{
   width: 100%;
   height: 52.857em;
   position: fixed;
@@ -27,18 +27,4 @@
   & li:first-child{
     border-top: none;
   }
-}
-
-.mobileMenuHide{
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transition: transform .2s linear,-webkit-transform .2s linear;
-}
-
-.mobileMenuShow{
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transition: transform .2s linear,-webkit-transform .2s linear
 }

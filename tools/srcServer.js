@@ -18,6 +18,10 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler))
 
+app.get('/menu', function (req, res) {
+  res.send('GET request to the homepage')
+})
+
 app.get('*', function (req, res) { // Because we are creating a singlepage app, we want express to serve index.html for ALL requests.
   res.sendFile(path.join(__dirname, '../src/index.html'))
 })
