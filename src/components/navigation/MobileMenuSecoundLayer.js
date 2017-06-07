@@ -28,7 +28,7 @@ const MobileMenuSecoundLayer = ({props}) => {
     <div id='mobileMenuSecoundLayerWrapper' className='mobileMenuHide'>
       <div className='mobileNav'>
         <ul>
-          <li className='mobileMenuListItem' >
+          <li className='mobileMenuListItem'>
             <a onClick={() => closeSecoundryLayer()}>GO BACK</a>
             <i className='fa fa-angle-left' aria-hidden='true' />}
           </li>

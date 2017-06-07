@@ -10,12 +10,14 @@
   display: block;
 
   .mobileNav{
-    width: 90%;
-    height: 52.857em;
     position: fixed;
+    width: 90%;
+    height: 50em;
+    max-height: 90vh;
     left: 0;
     border-top: 3px solid #1c1c1c;
     background: url('https://res.cloudinary.com/dblakenzcloud/image/upload/v1496636673/Salomon/broken_noise-pattern.png');
+    overflow-y: scroll;
   }
 
   & ul{

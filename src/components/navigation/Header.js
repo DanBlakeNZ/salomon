@@ -44,6 +44,10 @@ function openMenu (mobileMenuActions, mobileMenuOpen) {
     document.getElementById('mobileMenuWrapper').classList.add('mobileMenuHide')
     document.getElementById('mobileMenuSecoundLayerWrapper').classList.add('mobileMenuHide')
     document.getElementById('mobileMenuSecoundLayerWrapper').classList.remove('mobileMenuShow')
+    document.getElementById('mobileMenuThirdLayerWrapper').classList.add('mobileMenuHide')
+    document.getElementById('mobileMenuThirdLayerWrapper').classList.remove('mobileMenuShow')
+    document.getElementById('mobileMenuSportsLayerWrapper').classList.add('mobileMenuHide')
+    document.getElementById('mobileMenuSportsLayerWrapper').classList.remove('mobileMenuShow')
   } else {
     mobileMenuActions.toggleMenuSuccess(true)
     document.getElementById('burger').classList.remove('burgerClosed')

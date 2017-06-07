@@ -1,5 +1,5 @@
 // main: ../../main.scss
-#mobileMenuWrapper{
+#mobileMenuSportsLayerWrapper{
   width: 100%;
   height: 52.857em;
   position: fixed;
@@ -7,12 +7,13 @@
   bottom: 0;
   left: 0;
   top:4.500em;
-  background: rgba(0,0,0,.5);
   display: block;
 
   .mobileNav{
     width: 90%;
     height: 52.857em;
+    position: fixed;
+    left: 0;
     border-top: 3px solid #1c1c1c;
     background: url('https://res.cloudinary.com/dblakenzcloud/image/upload/v1496636673/Salomon/broken_noise-pattern.png');
   }
@@ -26,18 +27,4 @@
   & li:first-child{
     border-top: none;
   }
-}
-
-.mobileMenuHide{
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transition: transform .3s ease-in,-webkit-transform .3s ease-in;
-}
-
-.mobileMenuShow{
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transition: transform .3s ease-out,-webkit-transform .3s ease-out
 }

@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react'
 import MobileMenuItem from './MobileMenuItem.js'
+import MobileMenuSportsItem from './MobileMenuSportsItem'
 import firstMenuData from '../../data/menuData/firstMenu'
 
 const MobileMenu = ({props}) => {
@@ -8,9 +9,15 @@ const MobileMenu = ({props}) => {
       <div className='mobileNav'>
         <ul>
           {firstMenuData.map((menuItem) => {
-            return (
-              <MobileMenuItem menuItem={menuItem} key={menuItem} actions={props.mobileMenuActions} />
-            )
+            if (menuItem === 'Sports') {
+              return (
+                <MobileMenuSportsItem menuItem={menuItem} key={menuItem} actions={props.mobileMenuActions} />
+              )
+            } else {
+              return (
+                <MobileMenuItem menuItem={menuItem} key={menuItem} actions={props.mobileMenuActions} />
+              )
+            }
           })}
         </ul>
       </div>
