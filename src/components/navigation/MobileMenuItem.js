@@ -6,7 +6,7 @@ const MobileMenuItem = (props) => {
   const actions = props.actions
 
   function openSecoundryLayer () {
-    openLayer('mobileMenuSecoundLayerWrapper', actions, menuItem)
+    openLayer('mobileMenuSecoundLayerWrapper', menuItem, actions)
   }
 
   return (

@@ -1,14 +1,19 @@
 import React, {PropTypes} from 'react'
+import {showMobileMenu} from './navigationFunctions/mobileMenuFunctions'
 
 const Header = ({props}) => {
   const mobileMenuActions = props.mobileMenuActions
   const mobileMenuOpen = props.mobileMenuOpen
 
+  function openMobileMenu () {
+    showMobileMenu(mobileMenuActions, mobileMenuOpen)
+  }
+
   return (
     <header className='header' id='salomonHeaderWrapper'>
       <nav>
         <div className='navWrapper'>
-          <div id='burger' className='burgerClosed' onClick={() => openMenu(mobileMenuActions, mobileMenuOpen)}>
+          <div id='burger' className='burgerClosed' onClick={openMobileMenu}>
             <div />
             <div />
             <div />
@@ -34,25 +39,3 @@ Header.propTypes = {
 }
 
 export default Header
-
-function openMenu (mobileMenuActions, mobileMenuOpen) {
-  if (mobileMenuOpen) {
-    mobileMenuActions.toggleMenuSuccess(false)
-    document.getElementById('burger').classList.remove('burgerOpen')
-    document.getElementById('burger').classList.add('burgerClosed')
-    document.getElementById('mobileMenuWrapper').classList.remove('mobileMenuShow')
-    document.getElementById('mobileMenuWrapper').classList.add('mobileMenuHide')
-    document.getElementById('mobileMenuSecoundLayerWrapper').classList.add('mobileMenuHide')
-    document.getElementById('mobileMenuSecoundLayerWrapper').classList.remove('mobileMenuShow')
-    document.getElementById('mobileMenuThirdLayerWrapper').classList.add('mobileMenuHide')
-    document.getElementById('mobileMenuThirdLayerWrapper').classList.remove('mobileMenuShow')
-    document.getElementById('mobileMenuSportsLayerWrapper').classList.add('mobileMenuHide')
-    document.getElementById('mobileMenuSportsLayerWrapper').classList.remove('mobileMenuShow')
-  } else {
-    mobileMenuActions.toggleMenuSuccess(true)
-    document.getElementById('burger').classList.remove('burgerClosed')
-    document.getElementById('burger').classList.add('burgerOpen')
-    document.getElementById('mobileMenuWrapper').classList.remove('mobileMenuHide')
-    document.getElementById('mobileMenuWrapper').classList.add('mobileMenuShow')
-  }
-}

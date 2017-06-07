@@ -1,10 +1,15 @@
 import React, {PropTypes} from 'react'
+import {openLayer} from './navigationFunctions/mobileMenuFunctions'
 
 const MobileMenuItem = (props) => {
   const menuItem = props.menuItem
 
+  function openSportsLayer () {
+    openLayer('mobileMenuSportsLayerWrapper', menuItem)
+  }
+
   return (
-    <li className='mobileMenuListItem' onClick={() => openSportsMenu()} >
+    <li className='mobileMenuListItem' onClick={openSportsLayer} >
       <a>{menuItem}</a>}
       <i className='fa fa-angle-right' aria-hidden='true' />}
     </li>
@@ -16,8 +21,3 @@ MobileMenuItem.propTypes = {
 }
 
 export default MobileMenuItem
-
-function openSportsMenu (actions, menuItem) {
-  document.getElementById('mobileMenuSportsLayerWrapper').classList.remove('mobileMenuHide')
-  document.getElementById('mobileMenuSportsLayerWrapper').classList.add('mobileMenuShow')
-}
