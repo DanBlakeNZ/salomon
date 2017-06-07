@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react'
 import MobileMenuThirdLayerItem from './MobileMenuThridLayerItem'
 
-import sportsData from '../../data/menuData/sportsMenu'
+import filterBySportsData from '../../data/menuData/filterBySportsMenu'
 import collectionData from '../../data/menuData/collectionsMenu'
 import shoesData from '../../data/menuData/shoesMenu'
 import clothingData from '../../data/menuData/clothingMenu'
@@ -16,12 +16,12 @@ import sLabFutureData from '../../data/menuData/sLabFutureMenu'
 import sLabMeData from '../../data/menuData/sLabMeMenu'
 
 const MobileMenuThirdLayer = ({props}) => {
-  let menuData = sportsData
+  let menuData = filterBySportsData // default so will render.
   updateMenuData(props.thirdMobileMenuLayer)
 
   function updateMenuData (clickedMenu) {
     if (clickedMenu === 'Filter By Sports') {
-      menuData = sportsData
+      menuData = filterBySportsData
     }
     if (clickedMenu === 'Collections') {
       menuData = collectionData
