@@ -4,7 +4,7 @@ import firstMenuData from '../../data/menuData/firstMenu'
 
 const MobileMenu = ({props}) => {
   return (
-    <div id='mobileMenuWrapper' className='mobileMenuHide'>
+    <div id='mobileMenuWrapper' className='mobileMenuHide MobileMenuWrapper'>
       <div className='mobileNav'>
         <ul>
           {firstMenuData.map((menuItem) => {

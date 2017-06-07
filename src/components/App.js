@@ -5,6 +5,7 @@ import * as mobileMenuActions from '../actions/mobileMenuActions'
 
 import Header from './navigation/Header'
 import MobileMenu from './navigation/MobileMenu'
+import MobileMenuSecoundLayer from './navigation/MobileMenuSecoundLayer'
 
 class App extends React.Component {
   render () {
@@ -12,6 +13,7 @@ class App extends React.Component {
       <div>
         <Header props={this.props} />
         <MobileMenu props={this.props} />
+        <MobileMenuSecoundLayer props={this.props} />
         {this.props.children}
       </div>
     )
@@ -20,12 +22,14 @@ class App extends React.Component {
 
 App.propTypes = {
   children: PropTypes.object.isRequired,
-  mobileMenuOpen: PropTypes.bool.isRequired
+  mobileMenuOpen: PropTypes.bool.isRequired,
+  secoundryMobileMenuLayer: PropTypes.string.isRequired
 }
 
 function mapStateToProps (state, ownProps) {
   return {
-    mobileMenuOpen: state.mobileMenuOpen
+    mobileMenuOpen: state.mobileMenuOpen,
+    secoundryMobileMenuLayer: state.secoundryMobileMenuLayer
   }
 }
 

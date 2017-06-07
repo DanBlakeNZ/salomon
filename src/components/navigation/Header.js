@@ -42,6 +42,8 @@ function openMenu (mobileMenuActions, mobileMenuOpen) {
     document.getElementById('burger').classList.add('burgerClosed')
     document.getElementById('mobileMenuWrapper').classList.remove('mobileMenuShow')
     document.getElementById('mobileMenuWrapper').classList.add('mobileMenuHide')
+    document.getElementById('mobileMenuSecoundLayerWrapper').classList.add('mobileMenuHide')
+    document.getElementById('mobileMenuSecoundLayerWrapper').classList.remove('mobileMenuShow')
   } else {
     mobileMenuActions.toggleMenuSuccess(true)
     document.getElementById('burger').classList.remove('burgerClosed')
