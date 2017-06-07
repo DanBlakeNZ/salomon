@@ -11,3 +11,10 @@ export function loadSecoundryMobileMenuLayer (catagory) {
     catagory
   }
 }
+
+export function loadThirdMobileMenuLayer (catagory) {
+  return {
+    type: 'THIRD_MOBILE_MENU_LOAD_SUCCESS',
+    catagory
+  }
+}

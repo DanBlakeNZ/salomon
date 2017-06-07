@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react'
-import MobileMenuItem from './MobileMenuItem'
+import MobileMenuSecoundLayerItem from './MobileMenuSecoundLayerItem'
 import menWomenMenuData from '../../data/menuData/menWomenMenu'
 import kidsData from '../../data/menuData/kidsMenu'
 import brandData from '../../data/menuData/brandMenu'
@@ -34,7 +34,7 @@ const MobileMenuSecoundLayer = ({props}) => {
           </li>
           {menuData.map((menuItem) => {
             return (
-              <MobileMenuItem menuItem={menuItem} key={menuItem} actions={props.mobileMenuActions} />
+              <MobileMenuSecoundLayerItem menuItem={menuItem} key={menuItem} actions={props.mobileMenuActions} />
             )
           })}
         </ul>
