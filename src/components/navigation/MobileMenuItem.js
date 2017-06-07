@@ -1,11 +1,16 @@
 import React, {PropTypes} from 'react'
+import {openLayer} from './navigationFunctions/mobileMenuFunctions'
 
 const MobileMenuItem = (props) => {
   const menuItem = props.menuItem
   const actions = props.actions
 
+  function openSecoundryLayer () {
+    openLayer('mobileMenuSecoundLayerWrapper', menuItem, actions)
+  }
+
   return (
-    <li className='mobileMenuListItem' onClick={() => openSecoundryLayer(actions, menuItem)} >
+    <li className='mobileMenuListItem' onClick={openSecoundryLayer} >
 
       {menuItem === 'S/Lab' ? <a id='sLab'>{menuItem}</a> : <a>{menuItem}</a>}
       {menuItem === 'S/Lab' ? <i className='fa fa-angle-right' id='sLabArrow' aria-hidden='true' /> : ''}
@@ -20,9 +25,3 @@ MobileMenuItem.propTypes = {
 }
 
 export default MobileMenuItem
-
-function openSecoundryLayer (actions, menuItem) {
-  actions.loadSecoundryMobileMenuLayer(menuItem)
-  document.getElementById('mobileMenuSecoundLayerWrapper').classList.remove('mobileMenuHide')
-  document.getElementById('mobileMenuSecoundLayerWrapper').classList.add('mobileMenuShow')
-}

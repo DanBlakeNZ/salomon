@@ -1,11 +1,16 @@
 import React, {PropTypes} from 'react'
+import {openLayer} from './navigationFunctions/mobileMenuFunctions'
 
 const MobileMenuItem = (props) => {
   const menuItem = props.menuItem
   const actions = props.actions
 
+  function openThirdLayer () {
+    openLayer('mobileMenuThirdLayerWrapper', menuItem, actions)
+  }
+
   return (
-    <li className='mobileMenuListItem' onClick={() => openThirdLayer(actions, menuItem)} >
+    <li className='mobileMenuListItem' onClick={openThirdLayer} >
       <a>{menuItem}</a>
       <i className='fa fa-angle-right' aria-hidden='true' />
     </li>
@@ -18,9 +23,3 @@ MobileMenuItem.propTypes = {
 }
 
 export default MobileMenuItem
-
-function openThirdLayer (actions, menuItem) {
-  actions.loadThirdMobileMenuLayer(menuItem)
-  document.getElementById('mobileMenuThirdLayerWrapper').classList.remove('mobileMenuHide')
-  document.getElementById('mobileMenuThirdLayerWrapper').classList.add('mobileMenuShow')
-}
