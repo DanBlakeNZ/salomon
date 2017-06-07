@@ -1,12 +1,17 @@
 import React from 'react'
+import {closeLayer} from './navigationFunctions/mobileMenuFunctions'
 
 const MobileMenuSport = () => {
+  function closeSportLayer () {
+    closeLayer('mobileMenuSportsLayerWrapper')
+  }
+
   return (
     <div id='mobileMenuSportsLayerWrapper' className='mobileMenuHide'>
       <div className='mobileNav'>
         <ul>
           <li className='mobileMenuListItem' >
-            <a onClick={() => closeSportMenu()}>GO BACK</a>
+            <a className='mobileMenuBackButton' onClick={closeSportLayer}>GO BACK</a>
             <i className='fa fa-angle-left' aria-hidden='true' />}
           </li>
         </ul>
@@ -16,8 +21,3 @@ const MobileMenuSport = () => {
 }
 
 export default MobileMenuSport
-
-function closeSportMenu () {
-  document.getElementById('mobileMenuSportsLayerWrapper').classList.add('mobileMenuHide')
-  document.getElementById('mobileMenuSportsLayerWrapper').classList.remove('mobileMenuShow')
-}

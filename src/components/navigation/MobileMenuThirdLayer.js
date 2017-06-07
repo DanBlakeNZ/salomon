@@ -1,4 +1,6 @@
 import React, {PropTypes} from 'react'
+import {closeLayer} from './navigationFunctions/mobileMenuFunctions'
+
 import MobileMenuThirdLayerItem from './MobileMenuThridLayerItem'
 
 import filterBySportsData from '../../data/menuData/filterBySportsMenu'
@@ -16,66 +18,91 @@ import sLabFutureData from '../../data/menuData/sLabFutureMenu'
 import sLabMeData from '../../data/menuData/sLabMeMenu'
 
 const MobileMenuThirdLayer = ({props}) => {
-  let menuData = filterBySportsData // default so will render.
+  let menuData = ''
+
   updateMenuData(props.thirdMobileMenuLayer)
 
   function updateMenuData (clickedMenu) {
-    if (clickedMenu === 'Filter By Sports') {
-      menuData = filterBySportsData
+    switch (clickedMenu) {
+      case 'Filter By Sports':
+        menuData = filterBySportsData
+        break
+
+      case 'Collections':
+        menuData = collectionData
+        break
+
+      case 'Shoes':
+        menuData = shoesData
+        break
+
+      case 'Clothing':
+        menuData = clothingData
+        break
+
+      case 'Bags & Packs':
+        menuData = bagsData
+        break
+
+      case 'Protective & Googles':
+        menuData = protectiveData
+        break
+
+      case 'Accessories for':
+        menuData = accessoriesData
+        break
+
+      case 'Alpine Equipment':
+        menuData = alpineData
+        break
+
+      case 'Nordic Equipment':
+        menuData = alpineData
+        break
+
+      case 'Snowboard Equipment':
+        menuData = snowboardData
+        break
+
+      case 'About Salomon':
+        menuData = aboutData
+        break
+
+      case 'Le Storyboard':
+        menuData = leStoryboardData
+        break
+
+      case 'S/Lab Future At Play':
+        menuData = sLabFutureData
+        break
+
+      case 'S/Lab ME:SH':
+        menuData = sLabMeData
+        break
+
+      default:
+        menuData = ''
     }
-    if (clickedMenu === 'Collections') {
-      menuData = collectionData
-    }
-    if (clickedMenu === 'Shoes') {
-      menuData = shoesData
-    }
-    if (clickedMenu === 'Clothing') {
-      menuData = clothingData
-    }
-    if (clickedMenu === 'Bags & Packs') {
-      menuData = bagsData
-    }
-    if (clickedMenu === 'Protective & Googles') {
-      menuData = protectiveData
-    }
-    if (clickedMenu === 'Accessories for') {
-      menuData = accessoriesData
-    }
-    if (clickedMenu === 'Alpine Equipment') {
-      menuData = alpineData
-    }
-    if (clickedMenu === 'Nordic Equipment') {
-      menuData = alpineData
-    }
-    if (clickedMenu === 'Snowboard Equipment') {
-      menuData = snowboardData
-    }
-    if (clickedMenu === 'About Salomon') {
-      menuData = aboutData
-    }
-    if (clickedMenu === 'Le Storyboard') {
-      menuData = leStoryboardData
-    }
-    if (clickedMenu === 'S/Lab Future At Play') {
-      menuData = sLabFutureData
-    }
-    if (clickedMenu === 'S/Lab ME:SH') {
-      menuData = sLabMeData
-    }
+  }
+
+  function closeThridLayer () {
+    closeLayer('mobileMenuThirdLayerWrapper')
   }
   return (
     <div id='mobileMenuThirdLayerWrapper' className='mobileMenuHide'>
       <div className='mobileNav'>
         <ul>
           <li className='mobileMenuListItem' >
-            <a onClick={() => closeThirdLayer()}>GO BACK</a>
+            <a className='mobileMenuBackButton' onClick={closeThridLayer}>GO BACK</a>
             <i className='fa fa-angle-left' aria-hidden='true' />}
           </li>
-          {menuData.map((menuItem) => {
-            return (
-              <MobileMenuThirdLayerItem menuItem={menuItem} key={menuItem} />
-            )
-          })}
+          {
+            menuData === '' ? '' : menuData.map((menuItem) => {
+              return (
+                <MobileMenuThirdLayerItem menuItem={menuItem} key={menuItem} />
+              )
+            })
+          }
         </ul>
       </div>
     </div>
@@ -89,8 +116,3 @@ MobileMenuThirdLayer.propTypes = {
 }
 
 export default MobileMenuThirdLayer
-
-function closeThirdLayer () {
-  document.getElementById('mobileMenuThirdLayerWrapper').classList.add('mobileMenuHide')
-  document.getElementById('mobileMenuThirdLayerWrapper').classList.remove('mobileMenuShow')
-}
