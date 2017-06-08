@@ -11,11 +11,11 @@ export function closeLayer (layerName) {
 }
 
 export function showMobileMenu (mobileMenuActions, mobileMenuOpen) {
+  document.getElementById('burger').classList.toggle('burgerOpen')
+
 // If Mobile Menu is Open //
   if (mobileMenuOpen) {
     mobileMenuActions.toggleMenuSuccess(false)
-    document.getElementById('burger').classList.remove('burgerOpen')
-    document.getElementById('burger').classList.add('burgerClosed')
     closeLayer('mobileMenuWrapper')
     closeLayer('mobileMenuSecoundLayerWrapper')
     closeLayer('mobileMenuThirdLayerWrapper')
@@ -24,8 +24,6 @@ export function showMobileMenu (mobileMenuActions, mobileMenuOpen) {
 // If Mobile Menu is Closed //
   } else {
     mobileMenuActions.toggleMenuSuccess(true)
-    document.getElementById('burger').classList.remove('burgerClosed')
-    document.getElementById('burger').classList.add('burgerOpen')
     openLayer('mobileMenuWrapper')
   }
 }

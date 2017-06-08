@@ -5,7 +5,7 @@ const Header = ({props}) => {
   const mobileMenuActions = props.mobileMenuActions
   const mobileMenuOpen = props.mobileMenuOpen
 
-  function openMobileMenu () {
+  function mobileMenuToggle () {
     showMobileMenu(mobileMenuActions, mobileMenuOpen)
   }
 
@@ -13,7 +13,7 @@ const Header = ({props}) => {
     <header className='header' id='salomonHeaderWrapper'>
       <nav>
         <div className='navWrapper'>
-          <div id='burger' className='burgerClosed' onClick={openMobileMenu}>
+          <div id='burger' onClick={mobileMenuToggle}>
             <div />
             <div />
             <div />

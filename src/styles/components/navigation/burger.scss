@@ -1,6 +1,6 @@
 // main: ../../main.scss
 
-.burgerClosed{
+#burger{
   position: relative;
   top: 1.714em;
   left: 1.429em;
@@ -26,41 +26,17 @@
 
 }
 
-#burger:hover {
-  & div{
-    width: 1.286em;
-  }
-
-  & div:first-child{
-     width: 1.429em;
-   }
-
-  & div:last-child{
-    width: 1.429em;
-  }
-}
-
 .burgerOpen{
-  position: relative;
-  top: 1.714em;
-  left: 1.429em;
-  vertical-align: middle;
-  display: inline-block;
-  cursor: pointer;
 
   & div{
-    height: 0.143em;
-    width: 1.286em;
-    margin-bottom: 0.357em;
-    background: #878787;
-    transition: width .2s;
+    width: 1.286em !important;
   }
 
   & div:first-child{
-     width: 1.429em;
+     width: 1.429em !important;
    }
 
   & div:last-child{
-    width: 1.429em;
+    width: 1.429em !important;
   }
 }
