@@ -1,5 +1,15 @@
 /* Fonts */
 @font-face {
+  font-family: 'FuturaBT-Medium';
+  src: url('~../fonts/FuturaBT-Medium.woff2')
+  format('woff2'),
+       url('~../fonts/FuturaBT-Medium.woff')
+       format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'FuturaBT-MediumCondensed';
   src: url('~../fonts/FuturaBT-MediumCondensed.woff2') format('woff2'),
        url('~../fonts/FuturaBT-MediumCondensed.woff') format('woff');
@@ -35,5 +45,6 @@
 @import './components/navigation/mobileMenu';
 @import './components/navigation/MobileMenuSecoundLayer';
 @import './components/navigation/MobileMenuThirdLayer';
-@import './components/navigation/mobileMenuSports';
+@import './components/navigation/mobileMenuSportsLayer';
+@import './components/navigation/mobileMenuSportsLayerItem';
 @import './components/navigation/MobileMenuItem';
