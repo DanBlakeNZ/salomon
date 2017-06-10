@@ -35,8 +35,9 @@
 
 
 
-/* Component Styles */
+/* Global Styles */
 @import './global/globalStyles';
+@import './global/globalMediaQuerries';
 
 /* Component Styles */
 @import './components/app';

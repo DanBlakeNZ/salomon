@@ -1,4 +1,17 @@
 // main: ../../main.scss
+
+@media (min-width: 961px) {
+  #salomonHeaderWrapper{
+    & nav{
+      min-height: 7.143em !important;
+    }
+  }
+}
+
+
+
+// Component Styling - Mobile and initial//
+
 #salomonHeaderWrapper{
   position: fixed;
   top: 0;
@@ -21,7 +34,7 @@
   margin: 0px auto;
 }
 
-.logo{
+.logo-mobile{
   height: 35px;
   width: 34px;
   display: inline-block;
@@ -31,11 +44,6 @@
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
-
-  & .mobile{
-    height: 35px;
-    width: 34px;
-  }
 }
 
 .cart_wrapper{
@@ -52,4 +60,54 @@
   padding: 0em 1.071em;
   margin-right: 0.714em;
   font-size: 1.1em;
+}
+
+
+
+// Desktop Stylings - Desktop//
+
+.subheader{
+  display: none;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  float: left;
+  background-color: #1c1c1c;
+
+  & :hover{
+    color: white;
+    transition: color .3s ease-out,-webkit-color .3s ease-out;
+    cursor: pointer;
+  }
+}
+
+.locateStoreWrapper{
+  float: right;
+  padding: 0.715em 1.429em;
+  color: #878787;
+
+  & span{
+    font-family: 'FuturaBT-MediumCondensed';
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 0.15em;
+  }
+}
+
+.fa-map-marker{
+  font-size: 1.3em;
+  margin-right: 0.714em;
+}
+
+.desktop_logo {
+  width: 94px;
+  height: 71px;
+  display: none;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
 }
