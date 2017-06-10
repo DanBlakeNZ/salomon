@@ -24,10 +24,10 @@ const Header = ({props}) => {
             <div />
             <div />
           </div>
-          <a href='http://www.salomon.com/nz/' className='logo-mobile'>
+          <a href='http://www.salomon.com/nz/' className='logo-container'>
             <div>
-              <img className='mobile_logo mobile' alt='salomonLogo' src='https://res.cloudinary.com/dblakenzcloud/image/upload/v1496635759/Salomon/logo-salomon-mobile.svg' />
-              <img className='desktop_logo desktop' alt='salomonLogo'src='https://res.cloudinary.com/dblakenzcloud/image/upload/v1497068581/Salomon/logo-salomon-desktop.svg' />
+              <img className='mobile-logo mobile' alt='salomonLogo' src='https://res.cloudinary.com/dblakenzcloud/image/upload/v1496635759/Salomon/logo-salomon-mobile.svg' />
+              <img className='desktop-logo desktop' alt='salomonLogo'src='https://res.cloudinary.com/dblakenzcloud/image/upload/v1497068581/Salomon/logo-salomon-desktop.svg' />
 
             </div>
           </a>

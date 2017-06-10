@@ -34,9 +34,7 @@
   margin: 0px auto;
 }
 
-.logo-mobile{
-  height: 35px;
-  width: 34px;
+.logo-container{
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -44,6 +42,11 @@
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}
+
+.mobile-logo{
+  height: 35px;
+  width: 34px;
 }
 
 .cart_wrapper{
@@ -99,15 +102,8 @@
   margin-right: 0.714em;
 }
 
-.desktop_logo {
+.desktop-logo {
   width: 94px;
   height: 71px;
   display: none;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
 }
