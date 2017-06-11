@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react'
+import DesktopMenuLeft from './desktopMenuComponents/DesktopMenuLeft'
 import * as desktopMenuFunctions from './navigationFunctions/desktopMenuFunctions'
 
 const DesktopMenu = () => {
@@ -11,6 +12,7 @@ const DesktopMenu = () => {
   }
   return (
     <div id='desktopMenu' className='desktop desktopMenuHide' onMouseOver={showDesktopMenu} onMouseOut={hideDesktopMenu}>
+      <DesktopMenuLeft />
     </div>
   )
 }
