@@ -1,0 +1,11 @@
+// main: ../main.scss
+
+@media (min-width: 961px) {
+  .mobile{
+    display: none !important;
+  }
+
+  .desktop{
+    display: block !important;
+  }
+}

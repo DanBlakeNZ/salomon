@@ -1,0 +1,14 @@
+// main: ../../main.scss
+
+@media (min-width: 961px) {
+  #homepage-wrapper{
+    position: relative;
+    top: 5.35em;
+  }
+}
+
+#homepage-wrapper{
+  border: 1px solid red;
+  background-color: gray;
+  height: 100vh;
+}

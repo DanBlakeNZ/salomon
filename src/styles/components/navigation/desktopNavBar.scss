@@ -1,0 +1,61 @@
+// main: ../../main.scss
+
+.desktop-navbar-wrapper{
+  color: #dfeae8;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 2.5em;
+  display: none;
+
+  & ul{
+    margin: 0em;
+    padding: 0em;
+    list-style: none;
+    display: inline-block;
+  }
+
+  & li:hover{
+    cursor: pointer;
+    p {
+      color: #0ff;
+      border-bottom: 2px solid #0ff;
+    }
+  }
+}
+
+.desktopNavItem{
+  font-family: 'FuturaBT-MediumCondensed';
+  font-size: 1.1em;
+  letter-spacing: 0.12em;
+  display: inline-block;
+  height: 4.2em;
+  margin: 0 0.3em;
+  padding: 0 1.071em;
+  float: left;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+.navbar-left{
+  float: left;
+  display: inline-block;
+  height: 100%;
+}
+
+.navbar-right{
+  float: right;
+  display: inline-block;
+  height: 100%;
+
+  & li:nth-child(2) {
+    font-size: 0.8em;
+    color: #dfeae8;
+    display: inline-block;
+    height: 3.214em;
+    margin-right: 1.071em;
+    float: left;
+    text-transform: uppercase;
+    line-height: 3.3em;
+  }
+}

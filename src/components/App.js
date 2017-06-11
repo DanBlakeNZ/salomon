@@ -2,12 +2,14 @@ import React, {PropTypes} from 'react'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as mobileMenuActions from '../actions/mobileMenuActions'
+import * as desktopMenuActions from '../actions/desktopMenuActions'
 
 import Header from './navigation/Header'
 import MobileMenu from './navigation/MobileMenu'
 import MobileMenuSecoundLayer from './navigation/MobileMenuSecoundLayer'
 import MobileMenuThirdLayer from './navigation/MobileMenuThirdLayer'
 import MobileMenuSportsLayer from './navigation/MobileMenuSportsLayer'
+import DesktopMenu from './navigation/DesktopMenu'
 
 class App extends React.Component {
   render () {
@@ -18,6 +20,7 @@ class App extends React.Component {
         <MobileMenuSecoundLayer props={this.props} />
         <MobileMenuThirdLayer props={this.props} />
         <MobileMenuSportsLayer />
+        <DesktopMenu />
         {this.props.children}
       </div>
     )
@@ -41,7 +44,8 @@ function mapStateToProps (state, ownProps) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    mobileMenuActions: bindActionCreators(mobileMenuActions, dispatch)
+    mobileMenuActions: bindActionCreators(mobileMenuActions, dispatch),
+    desktopMenuActions: bindActionCreators(desktopMenuActions, dispatch)
   }
 }
 
