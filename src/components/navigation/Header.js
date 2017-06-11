@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react'
+import DesktopMenu from './DesktopMenu'
 import {showMobileMenu} from './navigationFunctions/mobileMenuFunctions'
 
 const Header = ({props}) => {
@@ -19,6 +20,7 @@ const Header = ({props}) => {
       </div>
       <nav>
         <div className='navWrapper'>
+          <DesktopMenu />
           <div id='burger' className='mobile' onClick={mobileMenuToggle}>
             <div />
             <div />

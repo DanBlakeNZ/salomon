@@ -9,7 +9,6 @@
 }
 
 
-
 // Component Styling - Mobile and initial//
 
 #salomonHeaderWrapper{
@@ -23,6 +22,7 @@
   & nav{
     position: relative;
     min-height: 4.500em;
+    max-height: 7.143em;
     margin: 0px auto;
     clear: both;
     list-style: none;
@@ -31,6 +31,7 @@
 
 .navWrapper{
   max-width: 1440px;
+  height: 100%;
   margin: 0px auto;
 }
 
@@ -106,4 +107,51 @@
   width: 94px;
   height: 71px;
   display: none;
+}
+
+.desktop-menu-wrapper{
+  color: #dfeae8;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 2.5em;
+  display: none;
+
+  & ul{
+    margin: 0em;
+    padding: 0em;
+    list-style: none;
+    display: inline-block;
+  }
+
+  & li{
+    font-family: 'FuturaBT-MediumCondensed';
+    font-size: 1.1em;
+    letter-spacing: 0.12em;
+    display: inline-block;
+    height: 3.214em;
+    margin: 0 0.3em;
+    padding: 0 1.071em;
+    float: left;
+    text-transform: uppercase;
+    line-height: 2em;
+
+    & :hover{
+      cursor: pointer;
+      color: #0ff;
+      border-bottom: 2px solid #0ff;
+    }
+  }
+}
+
+.menu-left{
+  float: left;
+  display: inline-block;
+  height: 100%;
+}
+
+.menu-right{
+  float: right;
+  display: inline-block;
+  height: 100%;
 }
