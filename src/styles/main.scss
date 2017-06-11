@@ -41,6 +41,7 @@
 
 /* Component Styles */
 @import './components/app';
+@import './components/homepage/homepage';
 @import './components/navigation/header';
 @import './components/navigation/burger';
 @import './components/navigation/mobileMenu';
@@ -49,3 +50,5 @@
 @import './components/navigation/mobileMenuSportsLayer';
 @import './components/navigation/mobileMenuSportsLayerItem';
 @import './components/navigation/MobileMenuItem';
+@import './components/navigation/desktopNavBar';
+@import './components/navigation/desktopMenu';

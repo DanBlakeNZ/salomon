@@ -9,6 +9,7 @@ import MobileMenu from './navigation/MobileMenu'
 import MobileMenuSecoundLayer from './navigation/MobileMenuSecoundLayer'
 import MobileMenuThirdLayer from './navigation/MobileMenuThirdLayer'
 import MobileMenuSportsLayer from './navigation/MobileMenuSportsLayer'
+import DesktopMenu from './navigation/DesktopMenu'
 
 class App extends React.Component {
   render () {
@@ -19,6 +20,7 @@ class App extends React.Component {
         <MobileMenuSecoundLayer props={this.props} />
         <MobileMenuThirdLayer props={this.props} />
         <MobileMenuSportsLayer />
+        <DesktopMenu />
         {this.props.children}
       </div>
     )
