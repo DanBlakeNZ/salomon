@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as mobileMenuActions from '../actions/mobileMenuActions'
+import * as desktopMenuActions from '../actions/desktopMenuActions'
 
 import Header from './navigation/Header'
 import MobileMenu from './navigation/MobileMenu'
@@ -41,7 +42,8 @@ function mapStateToProps (state, ownProps) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    mobileMenuActions: bindActionCreators(mobileMenuActions, dispatch)
+    mobileMenuActions: bindActionCreators(mobileMenuActions, dispatch),
+    desktopMenuActions: bindActionCreators(desktopMenuActions, dispatch)
   }
 }
 

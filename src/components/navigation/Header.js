@@ -4,6 +4,7 @@ import {showMobileMenu} from './navigationFunctions/mobileMenuFunctions'
 
 const Header = ({props}) => {
   const mobileMenuActions = props.mobileMenuActions
+  const desktopMenuActions = props.desktopMenuActions
   const mobileMenuOpen = props.mobileMenuOpen
 
   function mobileMenuToggle () {
@@ -20,7 +21,7 @@ const Header = ({props}) => {
       </div>
       <nav>
         <div className='navWrapper'>
-          <DesktopMenu />
+          <DesktopMenu props={desktopMenuActions} />
           <div id='burger' className='mobile' onClick={mobileMenuToggle}>
             <div />
             <div />
@@ -45,6 +46,7 @@ const Header = ({props}) => {
 Header.propTypes = {
   props: PropTypes.object.isRequired,
   mobileMenuActions: PropTypes.object,
+  desktopMenuActions: PropTypes.object,
   mobileMenuOpen: PropTypes.bool
 }
 
