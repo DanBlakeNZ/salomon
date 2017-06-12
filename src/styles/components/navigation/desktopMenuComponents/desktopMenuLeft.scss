@@ -14,39 +14,107 @@
   }
 }
 
-#desktopMenuLeft{
+.desktopMenuLeft{
   display: flex;
 
   & h3{
-    font-family: 'FuturaCondRegular';
-    font-size: 1.1em;
+    font-family: 'FuturaBT-MediumCondensed';
+    font-size: 1.05em;
     line-height: 1.1em;
     margin: 0em;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     color: #dfeae8;
     text-transform: uppercase;
+  }
+
+  & ul{
+    padding: 0em;
+    list-style: none;
+  }
+
+  & li:last-child{
+    margin-bottom: 2em;
   }
 }
 .col-1{
   background: rgba(0,0,0,.5);
   width: 25%;
-  height: 33em;
   display: inline-block;
-  padding-top: 3em;
-  padding-left: 1em;
-  border: 1px solid blue;
+  padding: 2.857em 0 1.071em 1.071em;
+
+  & p{
+    text-transform: uppercase;
+  }
 }
 .col-3{
   width: 25%;
-  height: 33em;
   display: inline-block;
-  border: 1px solid green;
+  padding: 2.857em 0 1.071em 1.071em;
+
+  & p{
+    text-transform: capitalize;
+  }
 }
 
 .productColomn{
   float: right;
   display: none;
-  border: 1px solid yellow;
-  height: 33em;
   width: 38%;
+  padding: 2.857em 1.071em;
+}
+
+.desktopMenuItem{
+  display: block;
+  font-family: 'FuturaBT-MediumCondensed';
+  letter-spacing: 0.1em;
+  font-size: 0.98em;
+  color: #878787;
+  line-height: 0.98em;
+
+  & :hover {
+    color: #0ff;
+    cursor: pointer;;
+  }
+}
+
+.desktopMenuImage{
+  width: 100%;
+  height: 11.786em;
+  margin-bottom: 2.143em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.desktopMenuImageText{
+  font-family: 'FuturaBT-Medium';
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 0 0 2.143em;
+
+  & p{
+    width: 100%;
+    padding-right: 14em;
+    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+  }
+}
+
+.desktopMenuArrowButton{
+  padding: 0.5em 2em;
+  background-color: #0ff;
+  cursor: pointer;
+
+  & :hover{
+    background-color: white;
+  }
+}
+
+.fa-long-arrow-right{
+  color: black;
+  font-size: 1.8em;
+  position: relative;
+  top: 0.18em;
 }
