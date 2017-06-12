@@ -1,5 +1,5 @@
 import React from 'react'
-import MobileMenuSportsLayerItem from './MobileMenuSportsLayerItem.js'
+import MenuSportsLayerItem from './MenuSportsLayerItem.js'
 import {closeLayer} from './navigationFunctions/mobileMenuFunctions'
 import sportsData from '../../data/menuData/sportsMenu'
 
@@ -17,7 +17,7 @@ const MobileMenuSport = () => {
           </li>
           {sportsData.map((menuItem) => {
             return (
-              <MobileMenuSportsLayerItem menuItem={menuItem} key={menuItem.id} />
+              <MenuSportsLayerItem menuItem={menuItem} key={menuItem.id} />
             )
           })
         }

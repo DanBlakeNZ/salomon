@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react'
 import DesktopMenuLeft from './desktopMenuComponents/DesktopMenuLeft'
+import DesktopMenuSports from './desktopMenuComponents/DesktopMenuSports'
 import * as desktopMenuFunctions from './navigationFunctions/desktopMenuFunctions'
 
 const DesktopMenu = ({desktopMenuOpen}) => {
@@ -15,6 +16,7 @@ const DesktopMenu = ({desktopMenuOpen}) => {
       {desktopMenuOpen === 'Men' ? <DesktopMenuLeft desktopMenuOpen={desktopMenuOpen} /> : ''}
       {desktopMenuOpen === 'Women' ? <DesktopMenuLeft desktopMenuOpen={desktopMenuOpen} /> : ''}
       {desktopMenuOpen === 'Kids' ? <DesktopMenuLeft desktopMenuOpen={desktopMenuOpen} /> : ''}
+      {desktopMenuOpen === 'Sports' ? <DesktopMenuSports /> : ''}
     </div>
   )
 }
