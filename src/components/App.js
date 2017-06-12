@@ -20,7 +20,7 @@ class App extends React.Component {
         <MobileMenuSecoundLayer props={this.props} />
         <MobileMenuThirdLayer props={this.props} />
         <MobileMenuSportsLayer />
-        <DesktopMenu />
+        <DesktopMenu desktopMenuOpen={this.props.desktopMenuOpen}/>
         {this.props.children}
       </div>
     )
@@ -31,14 +31,16 @@ App.propTypes = {
   children: PropTypes.object.isRequired,
   mobileMenuOpen: PropTypes.bool.isRequired,
   secoundryMobileMenuLayer: PropTypes.string.isRequired,
-  thirdMobileMenuLayer: PropTypes.string.isRequired
+  thirdMobileMenuLayer: PropTypes.string.isRequired,
+  desktopMenuOpen: PropTypes.string.isRequired
 }
 
 function mapStateToProps (state, ownProps) {
   return {
     mobileMenuOpen: state.mobileMenuOpen,
     secoundryMobileMenuLayer: state.secoundryMobileMenuLayer,
-    thirdMobileMenuLayer: state.thirdMobileMenuLayer
+    thirdMobileMenuLayer: state.thirdMobileMenuLayer,
+    desktopMenuOpen: state.desktopMenuOpen
   }
 }
 
