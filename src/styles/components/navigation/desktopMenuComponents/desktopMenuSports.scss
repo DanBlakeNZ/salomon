@@ -1,0 +1,34 @@
+// main: ../../../main.scss
+#desktopMenuSports{
+  & h2{
+    font-family: 'FuturaBT-MediumCondensed';
+    letter-spacing: 0.1em;
+    color: #0ff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 2.857em;
+  }
+
+  & li:before{
+    content: '';
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    right: 0em;
+    bottom: 0em;
+    background-color: rgba(0,0,0,.3);
+    transition: background-color .4s ease;
+  }
+  & li:hover::before{
+    background-color: rgba(0,0,0,.0);
+  }
+
+  & li{
+    padding: auto;
+  }
+}
+
+.desktopSportsImagesWrapper{
+  width: 100%;
+  padding: 1.786em 1.071em 1.429em 1.071em
+}

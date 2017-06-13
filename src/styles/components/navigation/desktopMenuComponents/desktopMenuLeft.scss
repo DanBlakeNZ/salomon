@@ -1,0 +1,78 @@
+// main: ../../../main.scss
+
+@media (min-width: 1200px) {
+  .productColomn{
+    display: inline-block !important;
+  }
+
+  .col-1{
+    width: 14% !important;
+  }
+
+  .col-3{
+    width: 16% !important;
+  }
+}
+
+.desktopMenuLeft{
+  display: flex;
+
+  & h3{
+    font-family: 'FuturaBT-MediumCondensed';
+    font-size: 1.05em;
+    line-height: 1.1em;
+    margin: 0em;
+    letter-spacing: 0.1em;
+    color: #dfeae8;
+    text-transform: uppercase;
+  }
+
+  & ul{
+    padding: 0em;
+    list-style: none;
+  }
+
+  & li:last-child{
+    margin-bottom: 2em;
+  }
+}
+.col-1{
+  background: rgba(0,0,0,.5);
+  width: 25%;
+  display: inline-block;
+  padding: 2.857em 0 1.071em 1.071em;
+
+  & p{
+    text-transform: uppercase;
+  }
+}
+.col-3{
+  width: 25%;
+  display: inline-block;
+  padding: 2.857em 0 1.071em 1.071em;
+
+  & p{
+    text-transform: capitalize;
+  }
+}
+
+.productColomn{
+  float: right;
+  display: none;
+  width: 38%;
+  padding: 2.857em 1.071em;
+}
+
+.desktopMenuItem{
+  display: block;
+  font-family: 'FuturaBT-MediumCondensed';
+  letter-spacing: 0.1em;
+  font-size: 0.98em;
+  color: #878787;
+  line-height: 0.98em;
+
+  & :hover {
+    color: #0ff;
+    cursor: pointer;;
+  }
+}
