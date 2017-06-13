@@ -1,6 +1,5 @@
 import React, {PropTypes} from 'react'
 import DesktopMenuCatagoryContainer from './DesktopMenuCatagoryContainer'
-import DesktopMenuItem from './DesktopMenuItem'
 import DesktopMenuImage from './DesktopMenuImage'
 
 import filterBySportData from '../../../data/menuData/filterBySportsMenu'

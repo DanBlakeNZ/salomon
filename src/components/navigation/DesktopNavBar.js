@@ -41,7 +41,7 @@ const DesktopNavBar = ({props}) => {
             <li className='desktopNavItem' data-navbarCatagory='S/Lab' onMouseOver={showDesktopMenu} onMouseOut={hideDesktopMenu}>
               <p>S/Lab</p>
             </li>
-            <li className='desktopNavItem' data-navbarCatagory='Salomon TV' onMouseOver={showDesktopMenu} onMouseOut={hideDesktopMenu}>
+            <li className='desktopNavItem' data-navbarCatagory='Salomon TV'>
               <p>Salomon Tv</p>
             </li>
           </ul>
