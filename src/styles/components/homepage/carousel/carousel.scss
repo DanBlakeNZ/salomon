@@ -15,3 +15,52 @@
   vertical-align: middle;
   object-fit: cover;
 }
+
+.carouselTextWrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 100%;
+  padding: 1.071em;
+  color: white;
+
+  & .fa-long-arrow-right{
+    color: white;
+    font-size: 1.5em;
+    margin: 0em 2em 0em 0.5em;
+    position: relative;
+    top: 0.05em;
+  }
+}
+
+.carouselCatagory{
+  font-family: 'FuturaBT-MediumCondensed';
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  padding: 0.5em;
+  text-transform: uppercase;
+  border: 0.15em solid white;
+  margin-bottom: 1.429em;
+  display: inline-block;
+}
+
+.carouselHeading{
+  font-family: 'FuturaBT-Medium';
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  line-height: 1em;
+  margin: 0em 0em 0.714em 0em;
+}
+
+.carouselCtaText{
+  font-family: 'FuturaBT-MediumCondensed';
+  text-transform: uppercase;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  letter-spacing: 0.05em;
+}
