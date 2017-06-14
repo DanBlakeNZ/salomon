@@ -20,6 +20,11 @@ export default {
     contentBase: path.resolve(__dirname, 'src') // Tells the webpack devServer where our code is located.
   },
   plugins: [
+      new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    }),
     new webpack.HotModuleReplacementPlugin(), // Enable us to replace modules without doing a full browser refresh.
     new webpack.NoErrorsPlugin() // Will keep errors from breaking the hot reload, will display error in browser.
   ],

@@ -1,12 +1,12 @@
 import React, {PropTypes} from 'react'
-import {closeLayer} from './navigationFunctions/mobileMenuFunctions'
+import {closeLayer} from '../navigationFunctions/mobileMenuFunctions'
 
 import MobileMenuSecoundLayerItem from './MobileMenuSecoundLayerItem'
 
-import menWomenMenuData from '../../data/menuData/menWomenMenu'
-import kidsData from '../../data/menuData/kidsMenu'
-import brandData from '../../data/menuData/brandMenu'
-import sLabData from '../../data/menuData/sLabMenu'
+import menWomenMenuData from '../../../data/menuData/menWomenMenu'
+import kidsData from '../../../data/menuData/kidsMenu'
+import brandData from '../../../data/menuData/brandMenu'
+import sLabData from '../../../data/menuData/sLabMenu'
 
 const MobileMenuSecoundLayer = ({props}) => {
   let menuData = ''

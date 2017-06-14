@@ -12,10 +12,10 @@
   & li:before{
     content: '';
     position: absolute;
-    top: 0em;
-    left: 0em;
-    right: 0em;
-    bottom: 0em;
+    top: 0.7em;
+    left: 0.7em;
+    right: 0.7em;
+    bottom: 0.7em;
     background-color: rgba(0,0,0,.3);
     transition: background-color .4s ease;
   }
