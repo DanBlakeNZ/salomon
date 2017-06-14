@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
+
 import * as mobileMenuActions from '../actions/mobileMenuActions'
 import * as desktopMenuActions from '../actions/desktopMenuActions'
 

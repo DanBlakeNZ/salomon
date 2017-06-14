@@ -8,6 +8,8 @@ import {Router, browserHistory} from 'react-router'
 import routes from './routes'
 import './styles/main.min.css'
 import './styles/normalize/norrmalize.css'
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 
 const store = configureStore()
 

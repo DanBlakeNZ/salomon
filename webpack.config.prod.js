@@ -21,6 +21,11 @@ export default {
     contentBase: './dist'
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    }),
     new webpack.optimize.OccurenceOrderPlugin(), // Optimizes the order our files are bundled in for optimal mini-fication.
     new webpack.DefinePlugin(GLOBALS), // Allos us to define variables that are then made avaliable to the libaries webpack is bundling. React looks at the node environment to deturmine if it should be built in production mode which will omit development specific features like prop.types.
     new ExtractTextPlugin('styles.css'), // Allows us to extract our css into a seperate file (this needs to be referenced in our production html)
