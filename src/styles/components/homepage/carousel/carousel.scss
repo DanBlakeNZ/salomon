@@ -1,0 +1,17 @@
+// main: ../../../main.scss
+
+@media (min-width: 961px) {
+
+}
+
+.carouselItemWrapper{
+  width: 100%;
+  height: auto;
+}
+
+.carouselImage{
+  width: 100%;
+  max-height: 41em;
+  vertical-align: middle;
+  object-fit: cover;
+}

@@ -41,17 +41,18 @@
 
 /* Component Styles */
 @import './components/app';
+
 @import './components/homepage/homepage';
+@import './components/homepage/carousel/carousel';
+
 @import './components/navigation/header';
 @import './components/navigation/burger';
-
 @import './components/navigation/mobileMenu';
 @import './components/navigation/MobileMenuSecoundLayer';
 @import './components/navigation/MobileMenuThirdLayer';
 @import './components/navigation/mobileMenuSportsLayer';
 @import './components/navigation/mobileMenuSportsLayerItem';
 @import './components/navigation/MobileMenuItem';
-
 @import './components/navigation/desktopNavBar';
 @import './components/navigation/desktopMenu';
 @import './components/navigation/desktopMenuComponents/desktopMenuLeft';

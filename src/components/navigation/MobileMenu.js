@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react'
-import MobileMenuItem from './MobileMenuItem.js'
-import MobileMenuSportsItem from './MobileMenuSportsItem'
+import MobileMenuItem from './mobileMenuComponents/MobileMenuItem.js'
+import MobileMenuSportsItem from './mobileMenuComponents/MobileMenuSportsItem'
 import firstMenuData from '../../data/menuData/firstMenu'
 
 const MobileMenu = ({props}) => {
