@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react'
-import {openLayer} from './navigationFunctions/mobileMenuFunctions'
+import {openLayer} from '../navigationFunctions/mobileMenuFunctions'
 
 const MobileMenuItem = (props) => {
   const menuItem = props.menuItem

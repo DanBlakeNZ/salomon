@@ -1,4 +1,6 @@
 import React from 'react'
+import CarouselItem from './carousel/CarouselItem'
+import carouselData from '../../data/carouselData/carouselData'
 
 import $ from 'jquery';
 import 'owl.carousel'
@@ -6,43 +8,34 @@ import 'owl.carousel'
 class HomePage extends React.Component {
   render () {
     $(document).ready(function(){
-      // Owl functionality goes here //
-      $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:1,
-          nav:true,
-          responsive:{
-              0:{
-                  items:2
-              },
-              600:{
-                  items:3
-              },
-              1000:{
-                  items:5
-              }
-          }
+      let owl = $('.owl-carousel');
+
+      owl.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true
+      });
+      $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
       })
-      //
-    });
+      $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+      })
+    })
 
     return (
       <div id='homepage-wrapper'>
-        <h1>I'm the HomePage component</h1>
-          <div className="owl-carousel owl-theme">
-            <div className="item"><h4>1</h4></div>
-            <div className="item"><h4>2</h4></div>
-            <div className="item"><h4>3</h4></div>
-            <div className="item"><h4>4</h4></div>
-            <div className="item"><h4>5</h4></div>
-            <div className="item"><h4>6</h4></div>
-            <div className="item"><h4>7</h4></div>
-            <div className="item"><h4>8</h4></div>
-            <div className="item"><h4>9</h4></div>
-            <div className="item"><h4>10</h4></div>
-            <div className="item"><h4>11</h4></div>
-            <div className="item"><h4>12</h4></div>
-        </div>
+          <div id='carousel-wrapper'>
+            <div className="owl-carousel owl-theme">
+              {carouselData.map((carouselItemData) => {
+                return (
+                  <CarouselItem carouselItemData={carouselItemData} key={carouselItemData.id} />
+                )
+              })}
+          </div>
+          </div>
       </div>
     )
   }

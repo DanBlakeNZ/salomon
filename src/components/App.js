@@ -7,9 +7,9 @@ import * as desktopMenuActions from '../actions/desktopMenuActions'
 
 import Header from './navigation/Header'
 import MobileMenu from './navigation/MobileMenu'
-import MobileMenuSecoundLayer from './navigation/MobileMenuSecoundLayer'
-import MobileMenuThirdLayer from './navigation/MobileMenuThirdLayer'
-import MobileMenuSportsLayer from './navigation/MobileMenuSportsLayer'
+import MobileMenuSecoundLayer from './navigation/mobileMenuComponents/MobileMenuSecoundLayer'
+import MobileMenuThirdLayer from './navigation/mobileMenuComponents/MobileMenuThirdLayer'
+import MobileMenuSportsLayer from './navigation/mobileMenuComponents/MobileMenuSportsLayer'
 import DesktopMenu from './navigation/DesktopMenu'
 
 class App extends React.Component {

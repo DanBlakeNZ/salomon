@@ -1,7 +1,7 @@
 import React from 'react'
-import MenuSportsLayerItem from './MenuSportsLayerItem.js'
-import {closeLayer} from './navigationFunctions/mobileMenuFunctions'
-import sportsData from '../../data/menuData/sportsMenu'
+import MenuSportsLayerItem from '../MenuSportsLayerItem.js'
+import {closeLayer} from '../navigationFunctions/mobileMenuFunctions'
+import sportsData from '../../../data/menuData/sportsMenu'
 
 const MobileMenuSport = () => {
   function closeSportLayer () {
