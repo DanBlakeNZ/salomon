@@ -1,0 +1,46 @@
+// main: ../../../main.scss
+
+@media (min-width: 480px) {
+  .newStylesImage{
+    display: inline-block !important;
+    margin: 0px !important;
+  }
+
+  .newStylesImage{
+    width: 50%;
+  }
+
+  .newStylesItemContainer{
+    & p {
+      display: inline-block !important;
+      width: 50%;
+      position: relative;
+      bottom: 4.5em;
+    }
+  }
+}
+
+.newStylesItemContainer{
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 2em;
+  padding: 30px 50px;
+  background-color: #F8F8F8;
+
+  & p {
+    font-family: 'FuturaBT-MediumCondensed';
+    color: #878787;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.newStylesImage{
+  display: block;
+  margin: auto;
+  max-width: 250px;
+}
