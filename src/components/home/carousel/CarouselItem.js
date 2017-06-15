@@ -8,6 +8,7 @@ const CarouselItem = ({carouselItemData}) => {
       <div className='carouselTextWrapper'>
         <p className='carouselCatagory'>{carouselItemData.catagory}</p>
         <h2 className='carouselHeading'>{carouselItemData.headline}</h2>
+        <p className='carouselParagraphText'>{carouselItemData.paragraphText}</p>
         <span className='carouselCtaText'>{carouselItemData.ctaText1}</span><i className="fa fa-long-arrow-right" aria-hidden="true" />
         {carouselItemData.ctaText2 === null ? '' :
           <span>
