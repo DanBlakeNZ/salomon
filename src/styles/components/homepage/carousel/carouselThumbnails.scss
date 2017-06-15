@@ -1,0 +1,31 @@
+// main: ../../../main.scss
+
+@media (min-width: 1200px) {
+  #thumbnail-wrapper{
+    display: block !important;
+  }
+}
+
+#thumbnail-wrapper{
+  width: 52.5em;
+  position: absolute;
+  left: 50%;
+  bottom: 4.286em;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: 1;
+  display: none;
+
+  .active{
+    border-bottom: 4px solid #31babc;
+  }
+}
+.thumbnailImage{
+  width: 17.500em;
+  height: 5.000em;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+  cursor: pointer;
+}

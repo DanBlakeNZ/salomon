@@ -1,7 +1,5 @@
 // main: ../../../main.scss
-@media (min-width: 480px) {
 
-}
 @media (min-width: 768px) {
 
   .carouselHeading{
@@ -17,6 +15,23 @@
   .carouselHeading{
     margin-bottom: 1.071em;
     font-size: 3.929em !important;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .carouselTextWrapper{
+    position: relative;
+    top: 18em !important;
+  }
+
+  .carouselHeading{
+    width: 8em;
+    font-size: 5.000em !important;
+    margin-bottom: 0em !important;
+  }
+  .owl-dots{
+    display: none !important;
   }
 }
 
@@ -91,4 +106,14 @@
   font-size: 1.3em;
   line-height: 1.3em;
   letter-spacing: 0.05em;
+}
+
+.owl-dots{
+  position: absolute;
+  left: 50%;
+  bottom: 1em;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: 1;
 }
