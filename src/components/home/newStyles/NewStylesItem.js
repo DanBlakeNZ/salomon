@@ -4,8 +4,9 @@ const NewStylesItem = ({itemData}) => {
   return (
     <div className='newStylesItemContainer'>
       <img src={itemData.imageUrl} className='newStylesImage'/>
-      <p>{itemData.productName}</p>
-
+      <div className='newStylesTextWraper'>
+        <p>{itemData.productName}</p>
+      </div>
     </div>
   )
 }
