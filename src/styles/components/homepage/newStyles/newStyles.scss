@@ -1,7 +1,23 @@
 // main: ../../../main.scss
 
-#newStylesWrapper{
+@media (min-width: 480px) {
+  .newStylesImage{
+    display: inline-block !important;
+    margin: 0px !important;
+  }
 
+  .newStylesImage{
+    width: 50%;
+  }
+
+  .newStylesItemContainer{
+    & p {
+      display: inline-block !important;
+      width: 50%;
+      position: relative;
+      bottom: 4.5em;
+    }
+  }
 }
 
 .newStylesItemContainer{
