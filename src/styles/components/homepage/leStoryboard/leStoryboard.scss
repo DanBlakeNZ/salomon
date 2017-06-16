@@ -3,3 +3,77 @@
   margin-top: 50px;
   width: 100%;
 }
+
+.storyboardItem{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 200px;
+  margin: 0px auto;
+  display: block;
+  position: relative;
+  text-align: center;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.3);
+    transition: background-color .4s ease;
+  }
+
+  &:hover::before{
+    background-color: rgba(0,0,0,.7);
+    cursor: pointer;
+  }
+
+  &.viewAll{
+    background-color: white;
+
+    &:before{
+      background-color: white;
+    }
+  }
+}
+
+.storyboardContentWrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+
+  & p{
+    margin: 0em;
+  }
+}
+
+.storyboardDate{
+  font-family: 'FuturaBT-Medium';
+  color: #0ff;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+.storyboardTitle{
+  font-family: 'FuturaBT-Medium';
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.viewAllText{
+  color: black!important;
+  font-family: 'FuturaBT-Medium';
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em !important;
+}
