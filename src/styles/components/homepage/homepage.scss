@@ -24,7 +24,7 @@
   line-height: 2.1em;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 1.7em 0;
+  margin-bottom: 0.5em;
 
   &:before{
     background-color: white;
@@ -36,4 +36,13 @@
     bottom: 0;
     margin-left: -0.5em;
   }
+}
+
+.homepageSectionSubtitle{
+  font-family: 'FuturaBT-Medium';
+  position: relative;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+  margin: 0em 0em 3em 0em;
 }

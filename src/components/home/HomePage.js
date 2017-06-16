@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from './carousel/Carousel'
 import NewStyles from './newStyles/NewStyles'
+import LeStoryboard from './leStoryboard/LeStoryboard'
 import carouselFunctions from './carousel/functions/carouselFunctions'
 
 class HomePage extends React.Component {
@@ -13,6 +14,9 @@ class HomePage extends React.Component {
         </section>
         <section id='newStyes-section' className='section-container dark-section'>
           <NewStyles />
+        </section>
+        <section id='leStoryboard-section' className='section-container dark-section'>
+          <LeStoryboard />
         </section>
 
       </div>
