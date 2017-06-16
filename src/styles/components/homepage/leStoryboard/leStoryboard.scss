@@ -1,4 +1,30 @@
 // main: ../../../main.scss
+
+@media screen and (min-width: 768px){
+  .storyboardItem{
+    width: 25%!important;
+    height: 200px!important;
+    display: inline-block!important;
+    margin: 0em!important;
+  }
+
+  .storyboardCatagory{
+    display: block!important;
+  }
+
+  .storyboardContentWrapper{
+    padding: 2em!important;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .storyboardItem{
+    height: 300px!important;
+  }
+}
+
+
+
 .storyboardTilesContainer{
   margin-top: 50px;
   width: 100%;
@@ -47,10 +73,30 @@
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
+  width: 100%;
+  padding: 2em;
 
   & p{
     margin: 0em;
   }
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.storyboardCatagory{
+  font-family: 'FuturaBT-MediumCondensed';
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  padding: 0.5em;
+  text-transform: uppercase;
+  border: 0.15em solid white;
+  display: none;
+  max-width: 7em;
+  text-align: center;
+  margin: 1em auto !important;
 }
 
 .storyboardDate{

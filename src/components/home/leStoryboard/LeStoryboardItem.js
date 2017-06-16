@@ -9,6 +9,7 @@ const LeStoryBoardItem = ({leStoryboardItemData}) => {
   return (
     <div className='storyboardItem' style={styles}>
       <div className='storyboardContentWrapper'>
+        <p className='storyboardCatagory'>{leStoryboardItemData.catagory}</p>
         <p className='storyboardDate'>
           {leStoryboardItemData.date}
         </p>
