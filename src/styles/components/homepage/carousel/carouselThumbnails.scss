@@ -10,7 +10,7 @@
   width: 52.5em;
   position: absolute;
   left: 50%;
-  bottom: 4.286em;
+  bottom: 1em;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
@@ -27,5 +27,18 @@
   display: inline-block;
   vertical-align: middle;
   object-fit: cover;
+  object-position: 0 -2.3em;
   cursor: pointer;
+
+  &:first-child{
+    object-position: 0 -1.2em;
+  }
+
+  &:nth-child(2){
+    object-position: 0 -3em;
+  }
+
+  &:nth-child(3){
+    object-position: 0 -3.2em;
+  }
 }
