@@ -7,11 +7,13 @@ const NewStyles = () => {
   return (
     <div id='newStylesWrapper'>
       <h2 className='homepageSectionHeader'>New Styles</h2>
-        {newStylesData.map((itemData) => {
-          return (
-            <NewStylesItem itemData={itemData} key={itemData.id} />
-          )
-        })}
+        <div className='newStylesCardWraper'>
+          {newStylesData.map((itemData) => {
+            return (
+              <NewStylesItem itemData={itemData} key={itemData.id} />
+            )
+          })}
+        </div>
     </div>
   )
 }

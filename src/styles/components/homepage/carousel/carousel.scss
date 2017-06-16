@@ -22,7 +22,7 @@
 
   .carouselTextWrapper{
     position: relative;
-    top: 18em !important;
+    top: 19em !important;
   }
 
   .carouselHeading{
@@ -76,6 +76,11 @@
   }
 }
 
+
+
+
+
+
 .carouselCatagory{
   font-family: 'FuturaBT-MediumCondensed';
   font-size: 1em;
@@ -116,7 +121,7 @@
 .owl-dots{
   position: absolute;
   left: 50%;
-  bottom: 1em;
+  bottom: 0.2em;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
   transform: translate(-50%);
