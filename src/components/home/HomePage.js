@@ -1,8 +1,9 @@
 import React from 'react'
+import carouselFunctions from './carousel/functions/carouselFunctions'
 import Carousel from './carousel/Carousel'
 import NewStyles from './newStyles/NewStyles'
 import LeStoryboard from './leStoryboard/LeStoryboard'
-import carouselFunctions from './carousel/functions/carouselFunctions'
+import Community from './community/Community.js'
 
 class HomePage extends React.Component {
   render () {
@@ -18,7 +19,9 @@ class HomePage extends React.Component {
         <section id='leStoryboard-section' className='section-container dark-section'>
           <LeStoryboard />
         </section>
-
+        <section id='community-section' className='section-container gray-section'>
+          <Community />
+        </section>
       </div>
     )
   }

@@ -8,12 +8,17 @@
 }
 
 .section-container{
-  padding: 1em 0.8em 1em 0.8em;
+  padding: 1em 0.8em 4em 0.8em;
 }
 
 .dark-section{
   color: white;
-    background-image: url(https://res.cloudinary.com/dblakenzcloud/image/upload/v1496636673/Salomon/broken_noise-pattern.png);
+  background-image: url(https://res.cloudinary.com/dblakenzcloud/image/upload/v1496636673/Salomon/broken_noise-pattern.png);
+}
+
+.gray-section{
+  color: white;
+  background-color: #1d1d1d;
 }
 
 .homepageSectionHeader{
