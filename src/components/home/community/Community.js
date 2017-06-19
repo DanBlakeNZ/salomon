@@ -1,4 +1,6 @@
 import React from 'react'
+import communityData from '../../../data/communityData/communityData'
+import CommunityBlockItem from './CommunityBlockItem'
 
 const Community = () => {
   return (
@@ -16,6 +18,11 @@ const Community = () => {
               <i className="fa fa-twitter socialIcon" aria-hidden="true" />
               <p className='seeMore'>See More<i className="fa fa-long-arrow-right" aria-hidden="true" /></p>
             </li>
+            {communityData.map((communityItemData) => {
+              return (
+                <CommunityBlockItem communityItemData={communityItemData} key={communityItemData.id} />
+              )
+            })}
           </ul>
         </div>
     </div>
