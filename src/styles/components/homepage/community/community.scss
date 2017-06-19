@@ -1,7 +1,5 @@
 // main: ../../../main.scss
 
-$itemSize: 16.714em;
-
 @media screen and (min-width: 768px){
   .communityBoardContainer{
     width: 52.857em !important;
@@ -96,6 +94,43 @@ $itemSize: 16.714em;
 
   .socialItem{
     padding-top: 4.5em;
+  }
+}
+
+@media screen and (min-width: 1412px){
+  .communityBoardContainer{
+    width: 98.572em !important;
+    height: 49.268em !important;
+
+    & li{
+      &:nth-child(2) {
+        left: 24.643em !important;
+        top: 0em !important;
+      }
+      &:nth-child(3) {
+        height: 49.268em !important;
+        width: 49.268em !important;
+        left: 49.268em !important;
+        top: 0em !important;
+
+      }
+      &:nth-child(4) {
+        left: 0em !important;
+        top: 24.643em !important;
+      }
+      &:nth-child(5) {
+        left: 24.643em !important;
+        top: 24.643em !important;
+      }
+    }
+  }
+  .communityBoardItem{
+    height: 24.643em !important;
+    width: 24.643em !important;
+  }
+
+  .socialItem{
+    padding-top: 7.5em;
   }
 }
 
