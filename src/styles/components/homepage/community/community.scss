@@ -1,12 +1,120 @@
 // main: ../../../main.scss
 
+$itemSize: 16.714em;
+
+@media screen and (min-width: 768px){
+  .communityBoardContainer{
+    width: 52.857em !important;
+    height: 26.429em !important;
+
+    & li{
+      &:nth-child(2) {
+        left: 13.214em !important;
+        top: 0em !important;
+      }
+      &:nth-child(3) {
+        height: 26.429em !important;
+        width: 26.429em !important;
+        left: 26.428em !important;
+        top: 0em !important;
+
+      }
+      &:nth-child(4) {
+        left: 0em !important;
+        top: 13.214em !important;
+      }
+      &:nth-child(5) {
+        left: 13.214em !important;
+        top: 13.214em !important;
+      }
+    }
+  }
+  .communityBoardItem{
+    height: 13.214em !important;
+    width: 13.214em !important;
+  }
+
+  .socialItem{
+    padding-top: 1.5em;
+
+    & p{
+      font-size: 0.857em !important;
+      line-height: 1.286em !important;
+
+    }
+
+    & h3{
+      font-size: 1em !important;
+      line-height: 1.214em !important;
+    }
+
+    & .socialIcon{
+      width: 1.7em !important;
+      height: 1.7em !important;
+      font-size: 1em !important;
+      line-height: 1.5em !important;
+      border: 1.5px solid #31babc !important;
+      margin: 1em 0.2em !important;
+    }
+  }
+}
+
+
+
+
+@media screen and (min-width: 1052px){
+  .communityBoardContainer{
+    width: 73.716em !important;
+    height: 36.858em !important;
+
+    & li{
+      &:nth-child(2) {
+        left: 18.429em !important;
+        top: 0em !important;
+      }
+      &:nth-child(3) {
+        height: 36.858em !important;
+        width: 36.858em !important;
+        left: 36.858em !important;
+        top: 0em !important;
+
+      }
+      &:nth-child(4) {
+        left: 0em !important;
+        top: 18.429em !important;
+      }
+      &:nth-child(5) {
+        left: 18.429em !important;
+        top: 18.429em !important;
+      }
+    }
+  }
+  .communityBoardItem{
+    height: 18.429em !important;
+    width: 18.429em !important;
+  }
+
+  .socialItem{
+    padding-top: 4.5em;
+  }
+}
+
+
+
+
+
+$itemSize: 16.714em;
+
 .communitySubtitle{
   font-size: 1em;
 }
 
 .communityBoardContainer{
-  max-width: 16.714em;
+  width: 100%;
+  width: 16.714em;
+  height: 83.57em;
   margin: 0em auto;
+  position: relative;
 
   & ul{
     padding: 0em;
@@ -14,13 +122,36 @@
   }
 
   & li{
-    margin: 0em;
+    transition:all 0.4s ease;
+
+    &:nth-child(2) {
+      cursor: pointer;
+      top: $itemSize;
+      left:0;
+    }
+    &:nth-child(3) {
+      cursor: pointer;
+      top: $itemSize*2;
+      left:0;
+
+    }
+    &:nth-child(4) {
+      cursor: pointer;
+      top: $itemSize*3;
+      left:0;
+    }
+    &:nth-child(5) {
+      cursor: pointer;
+      top: $itemSize*4;
+      left:0;
+    }
   }
 }
 
 .communityBoardItem{
-  height: 16.714em;
-  width: 16.714em;
+  position: absolute;
+  height: $itemSize;
+  width: $itemSize;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
