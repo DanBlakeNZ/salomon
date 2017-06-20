@@ -5,6 +5,7 @@ import NewStyles from './newStyles/NewStyles'
 import LeStoryboard from './leStoryboard/LeStoryboard'
 import Community from './community/Community'
 import MadeForYou from './madeForYou/MadeForYou'
+import Footer from'../footer/footer'
 
 class HomePage extends React.Component {
   render () {
@@ -25,6 +26,9 @@ class HomePage extends React.Component {
         </section>
         <section id='made-for-you-section' className='section-container white-section'>
           <MadeForYou />
+        </section>
+        <section id='footer-section' className='section-container dark-section'>
+          <Footer />
         </section>
       </div>
     )

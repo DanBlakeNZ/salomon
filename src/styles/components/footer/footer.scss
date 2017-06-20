@@ -1,0 +1,87 @@
+// main: ../../main.scss
+
+@media screen and (min-width: 768px){
+  .emailContainer{
+    & p{
+      text-align: right;
+      margin: 0.4em 0 !important;
+    }
+  }
+}
+
+
+
+
+#footer-section{
+  padding-top: 3.5em;
+}
+.footerWrapper{
+  position: relative;
+  overflow: auto;
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.footerRow{
+  margin-right: -1em;
+  margin-left: -1em;
+
+  &:first-child{
+    margin-bottom: 1.429em
+  }
+}
+
+.emailContainer{
+  width: 100%;
+  max-width: 58.5em;
+  padding: 0em 1em;
+  margin: 0px auto;
+
+  & p {
+    float: left;
+    font-family: 'FuturaBT-MediumCondensed';
+    color: #31babc;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
+    margin: 0 0 1em 0;
+    padding: 0 0.7em;
+    display: inline-block;
+  }
+}
+
+.emailForm{
+  padding: 0 1em;
+  display: inline-block;
+}
+
+#emailInput{
+  font-family: 'FuturaBT-MediumCondensed';
+  font-size: 1.1em;
+  line-height: 1.1em;
+  width: 14em;
+  height: 2.8em;
+  padding: 0 0 0 0.7em;
+  vertical-align: middle;
+}
+
+#emailButton{
+  background-color: #434343;
+  font-size: 1em;
+  vertical-align: middle;
+  height: 3.1em;
+  border: 0em;
+  margin-left: 0.2em;
+
+  & :hover{
+    cursor: pointer;
+  }
+
+    .fa-long-arrow-right{
+      color: white;
+      font-size: 1.5em;
+      line-height: 0.2em;
+      padding: 0em;
+    }
+}
