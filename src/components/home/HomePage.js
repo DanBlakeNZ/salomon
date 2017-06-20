@@ -3,7 +3,8 @@ import carouselFunctions from './carousel/functions/carouselFunctions'
 import Carousel from './carousel/Carousel'
 import NewStyles from './newStyles/NewStyles'
 import LeStoryboard from './leStoryboard/LeStoryboard'
-import Community from './community/Community.js'
+import Community from './community/Community'
+import MadeForYou from './madeForYou/MadeForYou'
 
 class HomePage extends React.Component {
   render () {
@@ -21,6 +22,9 @@ class HomePage extends React.Component {
         </section>
         <section id='community-section' className='section-container gray-section'>
           <Community />
+        </section>
+        <section id='made-for-you-section' className='section-container white-section'>
+          <MadeForYou />
         </section>
       </div>
     )

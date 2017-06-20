@@ -21,17 +21,13 @@ const communityData = [
   },
   {
     id: 3,
-    blockImage:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497828797/Salomon/community-3people.jpg',
-    shopThisLookImageUrl1:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497829246/Salomon/community-3people-support-Jacket.jpg',
-    shopThisLookText1:'Bonatti Pro WP JKT M',
-    shopThisLookImageUrl2:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497829246/Salomon/community-3people-support-Skort.jpg',
-    shopThisLookText2:'Lightning Pro Skort',
-    shopThisLookImageUrl3:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497829246/Salomon/community-3people-support-Hoodie.jpg',
-    shopThisLookText3:'Lightning Wind Hoodie',
-    shopThisLookImageUrl4:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497829245/Salomon/community-3people-support-Backpack.jpg',
-    shopThisLookText4:'Skin Pro 10 Set',
-    shopThisLookImageUrl5:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497829901/Salomon/community-3people-support-Shoe.jpg',
-    shopThisLookText5:'Sense Pro Max W'
+    blockImage:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497921729/Salomon/community-cliff-run.jpg',
+    shopThisLookImageUrl1:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497921913/Salomon/community-cliff-run-support-shoe.jpg',
+    shopThisLookText1:'S-Lab Sense 5 Ultra',
+    shopThisLookImageUrl2:'http://res.cloudinary.com/dblakenzcloud/image/upload/v1497921914/Salomon/community-cliff-run-support-vest.jpg',
+    shopThisLookText2:'S-Lab Sense Ultra 5 Set',
+    shopThisLookImageUrl3:'https://res.cloudinary.com/dblakenzcloud/image/upload/v1497921914/Salomon/community-cliff-run-support-shorts.jpg',
+    shopThisLookText3:'Elevate 2in1 Short W'
   },
   {
     id: 4,

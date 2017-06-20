@@ -40,8 +40,6 @@
 @import './global/globalMediaQuerries';
 
 /* Component Styles */
-@import './components/app';
-
 @import './components/navigation/header';
 @import './components/navigation/burger';
 @import './components/navigation/mobileMenu';
@@ -63,3 +61,4 @@
 @import './components/homepage/newStyles/newStyles';
 @import './components/homepage/leStoryboard/leStoryboard';
 @import './components/homepage/community/community';
+@import './components/homepage/madeForYou/madeForYou'
