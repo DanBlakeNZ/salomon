@@ -1,0 +1,58 @@
+// main: ../../../main.scss
+
+#madeForYouWrapper{
+  .homepageSectionHeader{
+    &:before{
+      background-color: black;
+    }
+  }
+}
+
+.madeForYouItemContainer{
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  cursor: pointer;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.3);
+    transition: background .4s ease;
+  }
+
+  &:hover::before{
+    background-color: rgba(0,0,0,.7);
+  }
+
+  & img{
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.madeForYouItemTextWrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+
+    & span{
+      margin-top: 1em!important;
+      padding: 0.3em 1.2em!important;
+    }
+    & .fa-long-arrow-right{
+      font-size: 1.4em;
+    }
+}
