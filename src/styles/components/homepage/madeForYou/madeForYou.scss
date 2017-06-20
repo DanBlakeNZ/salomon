@@ -1,6 +1,21 @@
 // main: ../../../main.scss
+@media screen and (min-width: 768px){
+  .madeForYouItemContainer{
+    width: 50% !important;
+    float: left !important;
+  }
+
+  .madeForYouImagesContainer{
+    height: auto;
+    overflow:auto; 
+  }
+}
+
+
+
 
 #madeForYouWrapper{
+  position: relative;
   .homepageSectionHeader{
     &:before{
       background-color: black;
