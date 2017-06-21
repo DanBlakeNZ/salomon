@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {PropTypes} from 'react'
+import CountrySelect from "react-country-select";
 import Email from './Email'
 
 const Footer = () => {
@@ -26,11 +27,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          <div className='footerCol'>
-            <h3>Change Your Country</h3>
-          </div>
-
           <div className='footerCol'>
             <h3>About Salomon</h3>
             <ul>
@@ -40,11 +36,6 @@ const Footer = () => {
               <li>Subscribe to newsletter</li>
             </ul>
           </div>
-
-          <div className='footerCol'>
-            <h3>Need Help</h3>
-          </div>
-
           <div className='footerCol'>
             <h3>Access</h3>
             <ul>
@@ -68,8 +59,10 @@ const Footer = () => {
               <li>kids / Speedcross series</li>
             </ul>
           </div>
-
         </div>
+      </div>
+      <div id='legalSection'>
+        <p>©2016 - Salomon S.A.S. | Privacy policy</p>
       </div>
     </footer>
   )
