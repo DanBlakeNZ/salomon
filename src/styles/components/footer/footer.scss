@@ -1,0 +1,94 @@
+// main: ../../main.scss
+
+@media screen and (min-width: 768px){
+  .emailContainer{
+    & p{
+      text-align: right;
+      margin: 0.4em 0 !important;
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .footerCol{
+    width: 25% !important;
+      margin-top: 1.2em;
+  }
+}
+
+
+#footer-section{
+  padding-top: 3.5em;
+  padding-bottom: 0em;
+}
+.footerWrapper{
+  position: relative;
+  overflow: auto;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.footerRow{
+  margin-right: -1em;
+  margin-left: -1em;
+
+  &:first-child{
+    margin-bottom: 1.429em
+  }
+}
+
+.footerCol{
+  min-height: 10em;
+  width: 50%;
+  float: left;
+  position: relative;
+  padding: 0em 1em;
+  font-size: 1em;
+  line-height: 1em;
+  color: #dfeae8;
+  font-family: 'FuturaCondRegular';
+
+  & h3 {
+    font-size: 1.2em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  & ul{
+    margin: 0em;
+    padding: 0em;
+  }
+
+  & li{
+    font-family: 'FuturaCondRegular';
+    font-size: 1.05em;
+    line-height: 1.3em;
+    &:hover{
+      color: #31babc;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.footerSocial{
+  display: inline-block;
+  color: #31babc;
+  font-size: 1.7em!important;
+  width: 25%;
+
+  &:hover{
+    color: #00FFFF !important;
+    cursor: pointer;
+  }
+}
+
+#legalSection{
+  background-color: #1C1C1C;
+  color: #dfeae8;
+  text-align: center;
+  line-height: 1em;
+  padding: 0.8em 0em;
+  margin: 3em -1em 0 -1em;
+}

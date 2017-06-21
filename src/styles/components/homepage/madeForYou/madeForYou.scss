@@ -7,15 +7,18 @@
 
   .madeForYouImagesContainer{
     height: auto;
-    overflow:auto; 
+    overflow:auto;
   }
 }
 
-
+#made-for-you-section{
+    padding: 1em 0.8em 1em 0.8em !important;
+}
 
 
 #madeForYouWrapper{
   position: relative;
+
   .homepageSectionHeader{
     &:before{
       background-color: black;
