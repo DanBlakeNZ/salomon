@@ -1,6 +1,6 @@
 # salomon
-https://salomon-clone.herokuapp.com/
-
+Live version!: https://salomon-clone.herokuapp.com/
+<br />
 I replicated the homepage of Salomon's New Zealand website as a way to further hone and improve my React, and overall development skills and how I thought about building a website.
 <br />
 <br />
