@@ -3,7 +3,9 @@ https://salomon-clone.herokuapp.com/
 
 I replicated the homepage of Salomon's New Zealand website as a way to further hone and improve my React, and overall development skills and how I thought about building a website.
 <br />
+<br />
 The entire page was built using React components with Redux also being used to manage some of the menu functionality. Additionally, the page is fully responsive and was build with a mobile first approach.
+<br />
 <br />
 Some of the key features are:<br />
 •	Built using React JSX and incorporates Redux to manage the mobile menu state.<br />
