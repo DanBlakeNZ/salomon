@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.8.0",
-    "bootstrap": "3.3.6",
+    "bootstrap": "3.4.1",
     "country-select-js": "^1.0.8",
     "jquery": "2.2.3",
     "normalize.css": "^7.0.0",
